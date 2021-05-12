@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.principal-index__title,
+.title {
+  font-size: calc(3em + 4vw);
+}
+
+.principal-index__subtitle {
+  font-size: calc(1em + .5vw);
+}
+
+.card__title {
+  font-size: calc(1.3rem + .6vw);
+}
+
+@supports (display:grid) {
+
+  @include tablet {
+    .link {
+      &::before {
+        display: block;
+        width: 32px;
+        height: 4px;
+        margin-bottom: 1em;
+        content: "";
+        background-color: $accent;
+      }
+    }
+
+    .principal-index__title,
+    .title {
+      font-size: calc(3em + 7vw);
+    }
+
+    .principal-index__subtitle {
+      writing-mode: vertical-rl;
+    }
+
+    .principal-index__no-visible {
+      width: 20ch;
+    }
+
+    .boton {
+      position: initial;
+    }
+  }
+}
