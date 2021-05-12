@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+
+.link {
+  @apply block text-base font-bold text-black text-opacity-50 no-underline uppercase tablet:pl-8;
+}
+
+.link-redes {
+  @apply border-0 py-2 px-3 tablet:px-6 tablet:ml-auto relative w-20 text-3xl text-text;
+}
+
+.btn-hamb {
+  @apply flex items-center p-2 border rounded-full border-accent border-opacity-50 focus:outline-none focus:border-3 focus:border-opacity-100 text-black text-opacity-50 bigtablet:hidden;
+}
+
+.menu {
+  @apply w-full bigtablet:flex bigtablet:items-center bigtablet:justify-end bigtablet:w-auto;
+}
+
+.nav {
+  @apply flex justify-between flex-wrap p-3;
+}
+
+.contenedor {
+  @apply container bigmovil:mx-auto bigmovil:max-w-xl bigtablet:max-w-2.5xl desktop:max-w-960 desktop-xl:max-w-6xl desktop-2xl:max-w-7xl border-accent;
+}
+
+.basic-title {
+  @apply mb-em font-serif text-accent;
+}
+
+.card {
+  @apply max-w-400 h-854 text-center border border-accent rounded;
+}
+
+.card__title {
+  @apply pt-4 mt-0 mb-2 font-medium leading-tight;
+}
+
+.card__artist {
+  @apply z-0;
+}
+
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+
+/**
+ * Import variables
+ */
+
+@import "variables";
+
+@import "mixins/mixins";
+
+/**
+ * Import npm dependencies
+ * see: https://v2.parceljs.org/features/module-resolution/
+ * see commented examples below
+ */
+
+// @import "some-node-module";
+// @import "@some-company/some-node-module";
+
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+/**
+ * Import layouts
+ * It's a best practice to use a different partial for each page
+ */
+
+@import "layouts/home";
+
+/**
+ * Do NOT include anything else in this file!
+ */
+
+ @tailwind utilities;
