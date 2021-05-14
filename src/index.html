@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="es" class="h-full">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=New+Tegomin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <title>The Dream</title>
+  </head>
+  <body class="font-sans">
+    <div class="contenedor border-b-4">
+        <nav class="nav">
+            <div class="flex items-center flex-shrink-0 mr-6">
+                <a class="link text-text text-xl" href="/">
+                    <img src="./assets/images/logo.png" alt="" width="30" height="24" class="inline-block text-center my-2 w-11 h-11">
+                    The Dream
+                </a>
+            </div>
+            <div class="">
+              <button id='boton' class="btn-hamb">
+                <svg class="fill-current h-7 w-7" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+              </button>
+            </div>
+            <div id='menu' class="menu">
+                <ul class="ml-auto pr-5 mb-2 flex flex-col bigtablet:flex-row pl-0 list-none">
+                    <li class="my-2 bigtablet:mx-4">
+                      <a class="link text-opacity-90" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="my-2 bigtablet:mx-4">
+                      <a class="link" href="miembros.html">Miembros</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <main class="relative block max-w-2xl p-4 mx-auto tablet:grid tablet:max-w-none tablet:p-0 tablet:grid-cols-portadaCol tablet:grid-rows-portadaRow principal-index">
+        <h1 class="basic-title movil:text-5xl tablet:col-start-3 tablet:col-end-6 tablet:row-start-2 tablet:row-end-3 tablet:z-20 tablet:mb-initial desktop:col-start-2 desktop:col-end-6 desktop:z-20 desktop:mb-initial principal-index__title">
+            The Dream
+        </h1>
+        <h2 class="mb-4 font-serif font-medium text-text uppercase tablet:row-start-1 tablet:-row-end-1 tablet:col-start-6 tablet:col-end-7 tablet:bg-main tablet:mb-initial principal-index__subtitle">“La música nunca puede ser mala,...”</h2>
+        <hr class="opacity-0 tablet:col-start-5 tablet:col-end-6 tablet:row-start-2 tablet:h-px tablet:bg-transparent principal-index__no-visible">
+        <p class="mb-4 leading-5 tablet:col-start-2 tablet:col-end-4 tablet:row-start-1 tablet:self-end tablet:p-6 tablet:bg-main tablet:mb-initial principal-index__about">A principios de este año, el conjunto nacido en Barcelona, The Dream, anunció un nuevo álbum en camino para 2022, pero dio escasos detalles sobre el proyecto, lo que dejó a los fanáticos especulando sobre lo que tenían reservado. Los fans ya no tienen que preocuparse, ya que el quinto álbum de estudio de The Dream, Epoch, ha llegado a lo grande.</p>
+        <div class="tablet:col-start-3 tablet:col-end-4 tablet:row-start-3 tablet:row-end-4 tablet:z-20 tablet:flex tablet:items-center tablet:justify-center tablet:bg-main tablet:mb-initial principal-index__mas"><a class="link" href="miembros.html">Leer más...</a></div>
+        <img src="./assets/images/portada.jpg" alt="Actuación musical de The Dream" class="w-full h-full object-cover tablet:col-start-1 tablet:col-end-7 tablet:row-start-1 tablet:row-end-5 tablet:-z-1  principal-index__portada">
+        <div class="font-bold leading-6 uppercase tablet:col-start-5 tablet:col-end-6 tablet:row-start-4 tablet:row-end-5 tablet:z-20 tablet:flex tablet:text-center tablet:bg-main location">
+            <p class="tablet:m-auto date">14-7-2022<br>Barcelona</p>
+        </div>
+        <button type="button" class="btn absolute right-4 bottom-1 py-4 px-8 text-base text-main uppercase bg-accent hover:font-bold hover:text-text cursor-pointer rounded tablet:col-start-2 tablet:col-end-3 tablet:row-start-4 tablet:row-end-5 tablet:static tablet:p-0 boton">Fechas Gira</button>
+    </main>
+    <footer class="py-6">
+        <p class="text-center mb-4">&copy; Todos los derechos reservados. 2021</p>
+    </footer>
+    <div class="contenedor border-t-4">
+        <nav class="nav flex-col">
+            <div class="flex ">
+                <div class="flex items-center flex-shrink-0">
+                    <a class="link text-text text-xl" href="/">
+                        <img src="./assets/images/logo.png" alt="" width="30" height="24" class="inline-block text-center my-2 w-11 h-11">
+                        The Dream
+                    </a>
+                </div>
+                <div class="flex pl-0 ml-auto mb-2 desktop:mb-0">
+                    <a href="#" class="link link-redes"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="link link-redes"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="link link-redes"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div id='menu' class="menu">
+                    <ul class="mb-2 flex justify-center list-none">
+                        <li class="m-2 bigtablet:mx-4">
+                          <a class="link text-opacity-90" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="m-2 bigtablet:mx-4">
+                          <a class="link" href="miembros.html">Miembros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>
