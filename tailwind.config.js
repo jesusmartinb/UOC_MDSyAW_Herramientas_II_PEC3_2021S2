@@ -29,7 +29,15 @@ module.exports = {
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
       ],
-      serif: ['"New Tegomin"', 'ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+      serif: [
+        '"New Tegomin"',
+        'ui-serif',
+        'Georgia',
+        'Cambria',
+        '"Times New Roman"',
+        'Times',
+        'serif'
+      ],
       mono: [
         'ui-monospace',
         'SFMono-Regular',
@@ -43,7 +51,7 @@ module.exports = {
     },
     colors: {
       'transparent': 'transparent',
-      'main': '#ffff',
+      'main': '#ffffff',
       'accent': '#fe320f',
       'text': '#282828',
       'black': '#000000',

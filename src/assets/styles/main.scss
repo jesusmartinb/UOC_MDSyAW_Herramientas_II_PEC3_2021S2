@@ -14,7 +14,7 @@
 }
 
 .menu {
-  @apply w-full bigtablet:flex bigtablet:items-center bigtablet:justify-end bigtablet:w-auto;
+  @apply w-full hidden bigtablet:flex bigtablet:items-center bigtablet:justify-end bigtablet:w-auto;
 }
 
 .nav {
